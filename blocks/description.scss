@@ -1,0 +1,23 @@
+.description {
+    text-align: center;
+    margin-bottom: 3.5625rem;
+    margin-top: 1.875rem;
+}
+.description__title {
+    margin-bottom: 1.5625rem;
+    line-height: 2.1875rem;
+}
+
+.description__desc {
+    width: 45%;
+    display: inline-block;
+    color: $grey;
+
+    @include tablets {
+        width: 65%; 
+    }
+
+    @include phones {
+        width: 100%; 
+    }
+}

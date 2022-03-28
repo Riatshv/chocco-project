@@ -1,0 +1,210 @@
+
+.back-imgs--block {
+    @include tablets {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    @include phones {
+        max-width: 100%;
+    }
+
+}
+
+.back-img {
+    position: absolute;
+    z-index: -1;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.back-imgs__bars {
+    right: 1.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/imgs/bars.png);
+    width: 505px;
+    height: 525px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include tablets {
+        background-image: url(/imgs/bars__tablets.png);
+        width: 360px;
+        height: 360px;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}
+
+.back-imgs__berry1 {
+    right: 15.9375rem;
+    top: 50%+30%;
+    transform: translateY(-50%);
+    background-image: url(/imgs/berry1.png);
+    width: 220px;
+    height: 210px;
+
+    @include tablets {
+        background-image: url(/imgs/berry__tablets.png);
+        width: 330px;
+        height: 230px;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}
+
+.back-imgs__berry2 {
+    right: 6.25rem;
+    bottom: 0;
+    transform: translateY(45%);
+    width: 111px;
+    height: 108px;
+    background-image: url(/imgs/berry2.png);
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.back-imgs__leaf1 {
+    right: 1.25rem;
+    top:50%+22%;
+    transform: translateY(-50%);
+    background-image: url(/imgs/leaf1.png);
+    width: 240px;
+    height: 205px;
+    
+    @include tablets {
+        background-image: url(/imgs/leaf1__tablets.png);
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 210px;
+        height: 230px;
+    }
+}
+
+.back-imgs__leaf2 {
+    right: 18.75rem;
+    bottom: 0;
+    transform: translateY(30%);
+    background-image: url(/imgs/leaf2.png);
+    width: 145px;
+    height: 105px;
+
+    @include tablets {
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        background-image: url(/imgs/leaf2__tablets.png);
+        width: 40px;
+        height: 80px;
+    }
+}
+
+.back-imgs__leaf3 {
+    left: 1.875rem;
+    bottom: 0;
+    transform: translateY(50%);
+    background-image: url(/imgs/leaf3.png);
+    width: 100px;
+    height: 100px;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.back-imgs__list {
+    background-image: url(/imgs/list.png);
+    width: 195px;
+    height: 315px;
+    top: 50%;
+    left: -0.8rem;
+    transform: translateY(-50%);
+
+    @include tablets {
+        transform: translateY(-125%);
+    }
+
+    @include phones {
+        display: none;
+    }
+}
+
+.back-imgs__3raspberry {
+    bottom: 0;
+    background-image: url(/imgs/3raspberry.png);
+    transform: translate(-25%, 50%);
+    width: 165px;
+    height: 315px;
+    
+
+    @include phones {
+        display: none;
+    }
+}
+
+.back-imgs__allberrys {
+    bottom: 0;
+    transform: translateY(40%);
+    background-image: url(/imgs/allberrys.png);
+    width: 135px;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%,0);
+}
+
+
+.back-imgs__vetka {
+    right: 0;
+    top: 0;
+    background-image: url(/imgs/vetka.png);
+    height: 167px;
+    width: 127px;
+    z-index: 10;
+}
+
+.back-imgs__strawberry {
+    right: 0;
+    top: 3.125rem;
+    width: 150px;
+    height: 86px;
+    background-image: url(/imgs/strawberry.png);
+    transform: translate(50%, 0);
+}
+
+.back-imgs__berry3 {
+    right: 0;
+    top: 0;
+    width: 135px;
+    height: 112px;
+    background-image: url(/imgs/berr3.png);
+    z-index: -2;
+    transform: translate(50%,0);
+}
+
+.back-imgs__list2 {
+    right: 0;
+    top: 0;
+    width: 196px;
+    height: 453px;
+    background-image: url(/imgs/list2.png);
+    transform: translate(50%, -50%);
+    z-index: -5;
+}
+
+.back-imgs__berry4 {
+    left: 0;
+    bottom: 0;
+    width: 196px;
+    height: 453px;
+    background-image: url(/imgs/berry4.png);
+    transform: translate(-60%, 50%);
+}

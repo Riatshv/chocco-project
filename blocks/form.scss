@@ -1,0 +1,132 @@
+.form {
+    display: flex;
+
+    &__column {
+        flex: 1;
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 1.25rem;
+
+        @include tablets {
+            margin-right: -20px;
+        }
+
+        @include phones {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @include tablets {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    @include phones {
+        margin: 0;
+    }
+}
+
+.form__contacts {
+    flex: 1;
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+
+
+.form__text {
+    width: 100%;
+    padding: 0.625rem 0.625rem;
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+        border: 2px #dfe3be solid;
+    }
+}
+
+.form__textarea {
+    resize: none;
+    height: 9.375rem;
+}
+
+.form__btn {
+    width: 1.625rem;
+    height: 1.625rem;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+
+.form__row--wrap {
+    flex-wrap: wrap;
+
+    .form__contacts {
+        flex: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.625rem;
+    }
+
+    .form__btn {
+        margin-right: 0.625rem;
+    }
+}
+
+
+.form__radio {
+    display: none;
+
+    
+
+    &:checked ~ .form__btn::after {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background-color: $green;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.form__contacts--checkbox {
+    .form__btn {
+        border-radius: initial;
+
+        .form__btn-checkmark {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .form__radio:checked ~ .form__btn::after{
+        content: "";
+        width: 0;
+        height: 0;
+    }
+
+    .form__radio:checked ~ .form__btn {
+        .form__btn-checkmark {
+            width: 11px;
+            height: 11px;
+        }
+    }
+    
+}
+
+
+

@@ -1,0 +1,8 @@
+.chocco-info__list {
+    display: flex;
+    flex-direction: row;
+
+    @include tablets {
+        display: none;
+    }
+}

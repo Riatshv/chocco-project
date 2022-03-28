@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+
+    @include tablets {
+        font-size: 15px;
+    }
+
+    @include phones {
+        font-size: 14px;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'alegreya_sans';
+    @include font-settings(1.125rem);
+    line-height: 1.42;
+    color: white;
+    height: 100%;
+    position: relative;
+    z-index: -4;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-width: 0px;
+    height: 100%;
+    position: relative;
+    z-index: -3;
+}
+
+button {
+    margin: 0;
+}
+
+.leftarrow {
+    transform: rotate(180deg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 95%;
+    top: 50%;
+    z-index: 200;
+
+    // @include tablets {
+    //     position: static;
+    // }
+}
+
+.rightarrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    z-index: 200; 
+}
+
+
+
+
+

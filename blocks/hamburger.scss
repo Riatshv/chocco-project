@@ -1,0 +1,35 @@
+.hamburger {
+    width: 24px;
+    height: 4px;
+    background-color: white;
+    margin-left: 20px;
+    position: relative;
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+
+    &::after {
+        content: "";
+        display: flex;
+        width: inherit;
+        height: inherit;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        margin-top: 5px;
+    }
+
+    &::before {
+        content: "";
+        display: flex;
+        width: inherit;
+        height: inherit;
+        background-color: white;
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: 5px;
+
+    }
+}

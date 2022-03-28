@@ -1,0 +1,95 @@
+.pluses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -30px;
+
+    @include phones {
+        flex-wrap: wrap;
+    }
+}
+
+.pluses__icon {
+    padding: 1.875rem;
+    border: 1px solid $white-smoke;
+    background-color: $white-smoke;
+    border-radius: 50%;
+    margin-bottom: 1.875rem;
+    display: inline-block;
+    position: relative;
+
+    @include tablets {
+        margin-bottom: 1rem;
+    }
+
+    @include phones {
+        margin-right: 1rem;
+        margin-bottom: 0;
+        align-self: flex-start;
+    }
+
+
+    &:after {
+        content: "";
+        background-image: url(/imgs/dots.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 67px;
+        height: 21px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translate(100%,-50%);
+
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+
+    &--last:after {
+        display: none;
+    }
+}
+
+.pluses__icon-el {
+    width: 70px;
+    height: 70px;
+    fill: black;
+}
+
+
+.pluses__item {
+    text-align: center;
+    flex-basis: 17.5rem;
+    margin-left: 30px;
+    
+    @include phones {
+        display: flex;
+        flex-direction: row; 
+        align-content: flex-start;
+        text-align: start;
+        margin-bottom: 1rem;
+        flex-basis: initial;
+    }
+}
+
+.pluses__article {
+    @include phones {
+        flex-grow: 1;
+    }
+}
+
+.pluses__title {
+    @include font-settings(1.6875rem, 600);
+    margin-bottom: 1.5625rem;
+    color: black;
+
+    @include tablets {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.pluses__desc {
+    color: $grey;
+    @include font-settings(1.125rem, 200, normal);
+}

@@ -1,0 +1,19 @@
+.chocco-element {
+    margin-right: 2.5rem;
+    flex-basis: 8.75rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.chocco-element__desc {
+    line-height: 19px;
+}
+
+.chocco-element__pic {
+    margin-right: 0.8125rem;
+    width: 50px;
+    height: 42px;
+    fill: $light-blue;
+}
+
+

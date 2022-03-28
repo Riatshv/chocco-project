@@ -1,0 +1,35 @@
+.footer {
+    font-size: 1.3125rem;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 2.625rem 0;
+    font-style: normal;
+    
+    &__left {
+        text-align: left;
+        margin-right: 20px;
+
+        @include phones {
+            margin-right: 0;
+        }
+    }
+
+    &__right {
+        text-align: right;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phones {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 3.125rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.slider__item {
+    margin-bottom: 0.3125rem;
+}
+
+.slider__link {
+    width: 16px;
+    height: 16px;
+    border: 1px transparent solid;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: white;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    &--active {
+        border-color: white;
+    }
+}

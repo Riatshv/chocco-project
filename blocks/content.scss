@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -50;
+
+    @include tablets {
+        padding: 30% 0;
+    }
+}

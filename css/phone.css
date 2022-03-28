@@ -1,0 +1,1 @@
+.phone-number{font-size:24px;color:white}.phone-number:before{content:"";display:inline-block;background-image:url(/imgs/phone.png);background-position:center center;background-repeat:no-repeat;width:12px;height:11px;margin-right:0.625rem}@media screen and (max-width:480px){.phone-number{text-align:center}}@media screen and (max-width:768px){.phone{display:none}}

@@ -1,0 +1,44 @@
+.phone {
+    display: flex;
+    align-items: center;
+
+    &--green {
+        color: $green;
+
+        .phone__icon {
+            fill: $green;
+        }
+    }
+    
+    @include phones {
+        justify-content: center;
+    }
+
+}
+
+
+.phone__icon {
+    width: 11px;
+    height: 11px;
+    fill: white;
+    
+}
+
+.phone__number {
+    font-size: 24px;
+    margin-left: 5px;
+
+    
+    @include phones {
+        text-align: center;
+    }
+}
+
+.header {
+    .phone {
+        @include tablets {
+            display: none;
+        }
+    }
+}
+

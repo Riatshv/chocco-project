@@ -1,0 +1,53 @@
+.button {
+    display: inline-block;
+}
+
+.button__link {
+    text-decoration: none;
+    padding: 1.25rem 2.125rem;
+    text-transform: uppercase;
+    display: block;
+    border-radius: 2.5rem;
+    border: 1px solid transparent;
+    @include font-settings(19px, 800);
+    @include button-sett();
+    transition: background-color 0.5s, 
+        border-color 0.5s, 
+        color 0.5s;
+
+    &:hover {
+        @include button-sett(white, $green, $green);
+    }
+}
+
+// .button--reset {
+//     .button__link {
+//         @include button-sett(black, transparent, transparent);
+//         text-transform: none;
+
+//         &:hover {
+//             @include button-sett($green, transparent, transparent);
+//         }
+//     }
+// }
+
+.button--reset {
+    .button__link {
+        @include button-sett(black, transparent, transparent);
+        text-transform: none;
+
+        &:hover {
+            @include button-sett($green, transparent, transparent);
+        }
+    }
+}
+
+.button--submit {
+    .button__link {
+        @include button-sett(white, $green, $green);
+
+        &:hover {
+            @include button-sett();
+        }
+    }
+}

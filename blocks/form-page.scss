@@ -1,0 +1,10 @@
+.form-page {
+    background-image: url(/imgs/berry_pattern.png);
+    background-position: top;
+    color: $green;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.875rem;
+    }
+}

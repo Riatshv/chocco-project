@@ -1,0 +1,14 @@
+.contacts {
+    color: black;
+    font-style: normal;
+
+    .phone-number {
+        color: $green;
+    }
+}
+
+.contacts__adress {
+    @include phones {
+        text-align: center;
+    }
+}

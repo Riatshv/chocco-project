@@ -1,0 +1,64 @@
+$green: #365a49;
+$orange: orange;
+$grey: #666666;
+$white-smoke: #f9faf9;
+$light-blue: #c6f7ff;
+$blue: #86c3d7;
+
+
+@mixin font-settings($size: 1rem, $weight: 400, $style: normal) {
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin button-sett($color: $green, $bordercolor: white, $backgroundcolor: white) {
+    color: $color; 
+    border-color: $bordercolor;
+    background-color: $backgroundcolor;
+}
+
+@mixin backgroundInit() {
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+// main settings
+@import "./layout/normalize.scss";
+@import "./layout/stylesheet.scss";
+@import "./layout/media.scss";
+@import "./layout/base.scss";
+
+// blocks
+@import "./blocks/container.scss";
+@import "./blocks/welcome.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/header.scss";
+@import "./blocks/phone.scss";
+@import "./blocks/order.scss";
+@import "./blocks/button.scss";
+@import "./blocks/chocco-element.scss";
+@import "./blocks/chocco-info.scss";
+@import "./blocks/section.scss";
+@import "./blocks/welcome-content.scss";
+@import "./blocks/back-imgs.scss";
+@import "./blocks/content.scss";
+@import "./blocks/why.scss";
+@import "./blocks/title.scss";
+@import "./blocks/description.scss";
+@import "./blocks/pluses";
+@import "./blocks/slider.scss";
+@import "./blocks/review.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/form-page.scss";
+@import "./blocks/form.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/outside.scss";
+@import "./blocks/hamburger.scss";
+@import "./blocks/members.scss";
+@import "./blocks/team.scss";
+@import "./blocks/overlay-menu.scss";
+@import "./blocks/bars.scss";
+@import "./blocks/products.scss";

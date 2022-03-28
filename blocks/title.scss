@@ -1,0 +1,12 @@
+.title {
+    text-transform: uppercase;
+    @include font-settings(3rem, 600);
+
+    @include phones {
+        @include font-settings(2.5rem, 600)
+    }
+}
+
+.title--black {
+    color: black;
+}
